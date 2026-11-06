@@ -1,9 +1,8 @@
 .home {
     color:black;
+    font-weight: bolder;
 }
 
-.mainIndex {
-    height: 87%;
-    width: 100%;
+main {
     background-color: grey;
 }
