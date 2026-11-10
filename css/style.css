@@ -30,7 +30,7 @@ header {
 
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 
     margin: 0px;
@@ -175,7 +175,7 @@ footer {
 footer ul {
     list-style: none;
 
-    width: 60%;
+    /* width: 60%; */
 
     display: flex;
     flex-direction: column;
@@ -210,8 +210,20 @@ footer ul li:hover {
     header {
         flex-direction: row;
     }
+
     header hr {
         display: none;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+
+        box-sizing: border-box;
+        padding: 0.5rem;
+    }
+    .subFooter ul {
+        flex-direction: row;
     }
 }
 
@@ -220,7 +232,6 @@ footer ul li:hover {
         flex-direction: row;
     }
 
-    /* INTENTAR CENTRAR */
     nav {                   
         flex: 2;
         width: 100%;
@@ -230,9 +241,4 @@ footer ul li:hover {
     header div {
         flex: 1;
     }
-/* 
-    .btnIndex {
-        flex-direction: column;
-        justify-content: end;
-    } */
 }
