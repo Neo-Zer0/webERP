@@ -14,9 +14,6 @@ body {
     width: 100%;
 
     background-color: var(--color-dark-white);
-
-    display: flex;
-    flex-direction: column;
 }
 
 
@@ -153,14 +150,14 @@ nav ul li:hover {
 /* Main */
 
 main {
-    flex: 1;
+    min-height: 72vh;
     width: 100%;
 }
 
 /* Footer */
 
 footer {
-    height: 8%;
+    min-height: 8vh;
     width: 100%;
     border-top: 1px solid var(--color-black);
 
