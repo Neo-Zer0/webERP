@@ -2,3 +2,91 @@
     color:black;
     font-weight: bolder;
 }
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.25fr repeat(6, 1fr);
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sectionTitle {
+    grid-row: 1;
+    grid-column: 1;
+
+    padding: 1rem;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionTitle h2 {
+    font-size: clamp(2rem, 5vw + 1rem, 3rem);
+}
+.sectionTitle p {
+    font-size: clamp(1.5rem, 3vw + 1rem, 2rem);
+    width: 60vw;
+    text-align: center;
+}
+
+.section {
+    grid-row: span 2;
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.section h3 {
+    font-size: clamp(1.5rem, 2.5vw + 1rem, 2.5rem);
+}
+.innerSectionTitles p {
+    font-size: clamp(1.25rem, 1.75vw + 1rem, 1.75rem);
+}
+
+/* LListas */
+.listHolder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    gap: 1rem;
+    padding: 1rem;
+
+
+    box-sizing: border-box;
+}
+
+.item {
+
+    box-sizing: border-box;
+    /* border: 1px solid var(--color-black); */
+    box-shadow: 0 0 5px var(--color-grey);
+    border-radius: 15px;
+
+    padding: 0.5rem;
+
+    font-size: clamp(0.8rem, 0.8rem + 0.5vw, 1rem)
+}
+
+.imgHolder img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 15px;
+}
+
+
+@media (min-width: 720px) {
+    .listHolder {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+    }
+}
