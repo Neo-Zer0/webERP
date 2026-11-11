@@ -39,6 +39,8 @@ header {
     box-sizing: border-box;
 
     background-color: var(--color-dark-white);
+
+    z-index: 100;
 }
 
 .logo {
@@ -120,6 +122,10 @@ nav ul li:hover {
     align-items: center;
     gap: 5px;
     margin-right: 15px;
+}
+
+.btnIndex div {
+    text-align: center;
 }
 
 .btnLI {
