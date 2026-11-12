@@ -2,3 +2,164 @@
     color:black;
     font-weight: bolder;
 }
+
+.supportMain {
+    border-top:1px solid grey;
+    min-width:360px;
+    flex:1;
+
+    display: flex;
+    flex-direction: column;
+
+    
+    padding:20px;
+    box-sizing: border-box;
+}
+
+.contactUs {
+    flex:1;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+span {
+    padding-bottom: 3px;
+}
+
+.input_text {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    height: 2.5em;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.message {
+    border-radius: 5px;
+    height: 80px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding:5px;
+    box-sizing: border-box;
+}
+
+.contenedor_btnSubmit {
+    width:100%;
+    height:2.5em;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 5px;
+    border-bottom:1px solid grey;
+
+}
+
+.btnSubmit {
+    width:5em;
+    height:100%;
+    text-align: center;
+    align-content: center;
+    background-color: var(--color-mid-blue);
+    border-radius: 5px;
+}
+
+.btnSubmit:hover {
+    cursor:pointer;
+    background-color: var(--color-blue);
+}
+
+.contactInformation {
+    flex:1;
+}
+
+.contactoCI {
+    margin: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    padding: 10px;
+    padding-top: 20px;
+    box-sizing: border-box;
+
+    border-radius:7.5px;
+    background-color:white;
+
+    display: grid;
+    grid-template-rows: 1.5fr 2fr;
+}
+
+.datosCI {
+    display: flex;
+    align-items: center;
+
+    gap: 7.5px;
+}
+
+.datos_iconos {
+    display: flex;
+    flex-direction: column;
+    gap:0;
+}
+
+.nombre_dato {
+    font-size: 10px;
+}
+
+.map {
+    border-radius:7.5px;
+    height: 400px;
+    margin: 10px;
+}
+
+.map iframe {
+    border-radius: 7.5px;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    border: none;
+}
+
+/* Vision ordenador */
+
+@media (min-width:700px) {
+    .input_text {
+        width:75%;
+    }
+
+    .message {
+        width:75%;
+    }
+
+    .contenedor_btnSubmit {
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width:1100px) {
+    .supportMain {
+        flex-direction: row;
+        padding-top: 50px;
+    }
+
+    .contactUs {
+        padding-bottom: 90px;
+    }
+
+    .spanp {
+        width:80%;
+    }
+
+    .input_text {
+        width:80%;
+    }
+
+    .message {
+        width:80%;
+    }
+
+    .contenedor_btnSubmit {
+        border-bottom:none;
+    }
+}
