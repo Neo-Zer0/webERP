@@ -77,6 +77,20 @@ main {
     font-size: clamp(0.8rem, 0.8rem + 0.5vw, 1rem)
 }
 
+.positiu {
+    box-shadow: 0 0 5px rgb(6, 166, 6);
+}
+.positiu h4 {
+    color: rgb(6, 166, 6);
+}
+
+.negatiu {
+    box-shadow: 0 0 5px rgb(230, 0, 0);
+}
+.negatiu h4 {
+    color: rgb(230, 0, 0);
+}
+
 .imgHolder img {
     width: 100%;
     aspect-ratio: 1/1;
