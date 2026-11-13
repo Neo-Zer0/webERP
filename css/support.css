@@ -64,11 +64,16 @@ span {
     align-content: center;
     background-color: var(--color-mid-blue);
     border-radius: 5px;
+    color:white;
 }
 
 .btnSubmit:hover {
     cursor:pointer;
     background-color: var(--color-blue);
+}
+
+.btnSubmit:active {
+    background-color: darkblue;
 }
 
 .contactInformation {
